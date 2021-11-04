@@ -12,6 +12,15 @@ class Joke {
       'Before software can be reusable it first has to be usable.',
       'I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.',
       'There are two ways to write error-free programs; only the third one works.',
+      'Wat is het toppunt van grofheid? \n \n Een mongooltje naar zijn kamer sturen en zeggen: “Kom maar terug als je weer normaal kunt doen',
+      'Een man heeft een jackpot gewonnen en gaat helemaal opgewonden naar huis. “Truus, pak je koffers maar in” zegt de man. “Wat is er dan aan de hand?” vraagt zijn vrouw. “Ik heb 2 miljoen gewonnen met de lotto!” zegt de man met een opgewonden stem. “Wauw, dat is prachtig!” zegt zijn vrouw. ”Wat moet ik dan inpakken, winter of zomerkleding?” \n \n “Dat boeit me helemaal niks” zegt de man. “Als je nu maar gewoon opdondert”',
+      'Een stel hebben samen 13 kinderen waarvan 12 blond haar hebben en blauwe ogen, een heeft zwart haar en bruine ogen en heet Hendrik. Op een dag ligt de vrouw van het stelletje op haar sterfbed en haar man zit dicht aan haar bed. De man zegt “Onze Hendrik is anders dan onze andere kinderen, heeft hij misschien een andere vader dan de rest?” Zijn vrouw zegt kortaf “Ja” “En..” zegt de man “wie is zijn vader dan?” Waarop zijn vrouw zegt “Jij!”',
+      'Vandaag was er een stroomstoring in het winkelcentrum... \n \n Drie Belgen zaten 4 uur lang vast op de roltrap!',
+      'Het is geel, vliegt tegen de muur, valt dood neer, maar vliegt even later weer verder. Rara, wat is het? \n\n Een reïnkanarie…',
+      'Hoe noem je het als twee lesbiennes in bed liggen en er maar eentje zin heeft? \n\n 1 pot nat!',
+      'De juf vraagt aan Olivia: “Ik ben mooi. Is deze zin tegenwoordige tijd of verleden tijd?” Waarop Olivia antwoordt: “Verleden tijd, juf.”',
+      'Door welke Pokémon word je verkouden? \n\n Pikhatsjoe!',
+      'Welke planeet is heel blij? \n\n Joepie-ter.',
     ];
   }
 
