@@ -1,0 +1,16 @@
+{
+  "name": "iMathBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bot.js"
+  },
+  "keywords": [],
+  "author": "Mathias Camus",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0"
+  }
+}
