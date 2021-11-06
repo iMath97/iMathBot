@@ -5,11 +5,17 @@ const { Client, Intents } = require('discord.js');
 // controllers
 const { initMessages } = require('./controllers/messages.js');
 const { initCommands } = require('./controllers/commands.js');
+const { initMusicPlayer } = require('./controllers/musicPlayer.js');
 
 // init discord client
 const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES],
 });
+
+const settings = {
+  prefix: '?',
+  bot_token: process.env.BOT_TOKEN,
+};
 
 // on ready
 client.on('ready', () => {
@@ -19,6 +25,7 @@ client.on('ready', () => {
 //* init functionalities
 initMessages(client);
 initCommands(client);
+initMusicPlayer(client, settings.prefix);
 
 // login bot
-client.login(process.env.BOT_TOKEN);
+client.login(settings.bot_token);
