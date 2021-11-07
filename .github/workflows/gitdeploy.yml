@@ -24,4 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm i
-      - run: pm2 restart imathbot
+      - name: Run BOT
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: BOT_TOKEN=$BOT_TOKEN pm2 restart imathbot --update-env
