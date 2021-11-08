@@ -1,3 +1,5 @@
+const JokeAPI = require('sv443-joke-api');
+
 class Joke {
   constructor() {
     this.jokes = [
@@ -24,8 +26,16 @@ class Joke {
     ];
   }
 
-  getJoke() {
-    return this.jokes[Math.floor(Math.random() * this.jokes.length)];
+  getJoke(command) {
+    JokeAPI.getJokes({
+      jokeType: 'single',
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        command.channel.send(data);
+      });
+
+    // return this.jokes[Math.floor(Math.random() * this.jokes.length)];
   }
 }
 

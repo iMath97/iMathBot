@@ -6,9 +6,7 @@ exports.initCommands = (client) => {
     switch (command.content.toLowerCase()) {
       case '?joke':
         const joke = new Joke();
-        command.reply({
-          content: joke.getJoke(),
-        });
+        joke.getJoke(command);
         break;
       case '?commands':
         command.reply({
