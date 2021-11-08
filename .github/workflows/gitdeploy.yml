@@ -26,6 +26,6 @@ jobs:
       - run: npm i
       - name: Run BOT
         env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }},
-          X_RAPIDAPI_KEY: ${{ secrets.X_RAPIDAPI_KEY }},
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          X_RAPIDAPI_KEY: ${{ secrets.X_RAPIDAPI_KEY }}
         run: BOT_TOKEN=$BOT_TOKEN X_RAPIDAPI_KEY=$X_RAPIDAPI_KEY pm2 restart imathbot --update-env
