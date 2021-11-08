@@ -9,7 +9,7 @@ class Joke {
       url: 'https://dad-jokes.p.rapidapi.com/random/joke',
       headers: {
         'x-rapidapi-host': 'dad-jokes.p.rapidapi.com',
-        'x-rapidapi-key': '1b44d90bb6msh7bf08ddf70f12c3p1bd00cjsnbed4bf94416a',
+        'x-rapidapi-key': process.env.X_RAPIDAPI_KEY,
       },
     };
 
