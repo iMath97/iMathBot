@@ -24,7 +24,7 @@ client.on('ready', () => {
 
 //* init functionalities
 initMessages(client);
-initCommands(client);
+initCommands(client, settings.prefix);
 initMusicPlayer(client, settings.prefix);
 
 // login bot
