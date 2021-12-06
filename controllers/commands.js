@@ -3,6 +3,8 @@ const Meme = require('../commands/Meme.js');
 
 exports.initCommands = (client) => {
   client.on('messageCreate', (command) => {
+    let role;
+    let member;
     switch (command.content.toLowerCase()) {
       case '?joke':
         const joke = new Joke();
@@ -19,14 +21,14 @@ exports.initCommands = (client) => {
         meme.getMeme(command);
         break;
       case '?participate':
-        let role = message.guild.roles.cache.find((r) => r.name === 'modded');
-        let member = message.member;
+        role = message.guild.roles.cache.find((r) => r.name === 'modded');
+        member = message.member;
 
         member.roles.add(role).catch(console.error);
         break;
       case '?retire':
-        let role = message.guild.roles.cache.find((r) => r.name === 'modded');
-        let member = message.member;
+        role = message.guild.roles.cache.find((r) => r.name === 'modded');
+        member = message.member;
 
         member.roles.remove(role).catch(console.error);
         break;
