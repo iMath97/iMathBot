@@ -18,6 +18,18 @@ exports.initCommands = (client) => {
         const meme = new Meme();
         meme.getMeme(command);
         break;
+      case '?participate':
+        const role = message.guild.roles.cache.find((r) => r.name === 'modded');
+        const member = message.member;
+
+        member.roles.add(role).catch(console.error);
+        break;
+      case '?retire':
+        const role = message.guild.roles.cache.find((r) => r.name === 'modded');
+        const member = message.member;
+
+        member.roles.remove(role).catch(console.error);
+        break;
 
       default:
         break;
