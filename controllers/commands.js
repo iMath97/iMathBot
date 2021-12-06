@@ -21,14 +21,14 @@ exports.initCommands = (client) => {
         meme.getMeme(command);
         break;
       case '?participate':
-        role = message.guild.roles.cache.find((r) => r.name === 'modded');
-        member = message.member;
+        role = command.guild.roles.cache.find((r) => r.name === 'modded');
+        member = command.member;
 
         member.roles.add(role).catch(console.error);
         break;
       case '?retire':
-        role = message.guild.roles.cache.find((r) => r.name === 'modded');
-        member = message.member;
+        role = command.guild.roles.cache.find((r) => r.name === 'modded');
+        member = command.member;
 
         member.roles.remove(role).catch(console.error);
         break;
