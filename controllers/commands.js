@@ -58,10 +58,6 @@ exports.initCommands = (client, prefix) => {
           });
         }
         break;
-      case 'joke':
-        const joke = new Joke();
-        joke.getJoke(command);
-        break;
       case 'usernames':
         command.reply({
           content: 'List of Minecraft usernames: \n - dannypas00 \n - iMath \n - Deeptought42 \n - edina190620',
