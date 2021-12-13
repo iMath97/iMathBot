@@ -60,7 +60,7 @@ exports.initCommands = (client, prefix) => {
         break;
       case 'usernames':
         command.reply({
-          content: 'List of Minecraft usernames: \n - dannypas00 \n - iMath \n - Deeptought42 \n - edina190620',
+          content: 'List of Minecraft usernames: \n - dannypas00 \n - iMath \n - Deeptought42 \n - edina190620 \n - LucarioMegaEX',
         });
         break;
       default:
